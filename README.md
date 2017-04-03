@@ -6,11 +6,19 @@
 - npm install
 - npm start
 
-- or more
-
 Development is a breeze. Once you have installed all your dependencies all the configuration is done for you. using simple The process is outlined [here](docs/development.md).
 
-#Git naming
+## Git Naming
+
+git checkout master
+
+git checkout -b feature/1-Floationg
+git push origin +feature/1-Floationg
+git push origin feature/1-Floationg
+git pull origin feature/1-Floationg
+
+git commit -m "[1, subtasks 4] fix(floationg) Floationg fix"
+
 [here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
 
 ## Features:
