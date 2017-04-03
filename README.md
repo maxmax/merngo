@@ -3,7 +3,7 @@
 
 ## Demo
 
-Git Naming [DemoSite](https://lit-stream-77660.herokuapp.com).
+[DemoSite](https://lit-stream-77660.herokuapp.com).
 
 ## Started:
 
@@ -15,17 +15,17 @@ Development is a breeze. Once you have installed all your dependencies all the c
 
 ## Git
 
-git checkout master
-git pull
+- git checkout master
+- git pull
 
-git checkout -b feature/1-Floationg
-git push origin +feature/1-Floationg
-git push origin feature/1-Floationg
-git pull origin feature/1-Floationg
+- git checkout -b feature/1-Floationg
+- git push origin +feature/1-Floationg
+- git push origin feature/1-Floationg
+- git pull origin feature/1-Floationg
 
-git commit -m "[1, subtasks 4] fix(floationg) Floationg fix"
+- git commit -m "[1, subtasks 4] fix(floationg) Floationg fix"
 
-Git Naming [here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
+- Git Naming [here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
 
 ## Features:
 - ~~isomorphic~~ [**universal**](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb#.4x2t3jlmx) Rendering
