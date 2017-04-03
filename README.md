@@ -10,6 +10,9 @@
 
 Development is a breeze. Once you have installed all your dependencies all the configuration is done for you. using simple The process is outlined [here](docs/development.md).
 
+#Git naming
+[here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
+
 ## Features:
 - ~~isomorphic~~ [**universal**](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb#.4x2t3jlmx) Rendering
 - [**Redux**](https://github.com/reactjs/redux) Predictive state containers.
