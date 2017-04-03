@@ -1,5 +1,10 @@
 # merngo
 
+
+## Demo
+
+Git Naming [DemoSite](https://lit-stream-77660.herokuapp.com).
+
 ## Started:
 
 - mongod
@@ -8,9 +13,10 @@
 
 Development is a breeze. Once you have installed all your dependencies all the configuration is done for you. using simple The process is outlined [here](docs/development.md).
 
-## Git Naming
+## Git
 
 git checkout master
+git pull
 
 git checkout -b feature/1-Floationg
 git push origin +feature/1-Floationg
@@ -19,7 +25,7 @@ git pull origin feature/1-Floationg
 
 git commit -m "[1, subtasks 4] fix(floationg) Floationg fix"
 
-[here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
+Git Naming [here](https://github.com/anyxem/git-info/blob/master/git-naming.md).
 
 ## Features:
 - ~~isomorphic~~ [**universal**](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb#.4x2t3jlmx) Rendering
@@ -90,18 +96,17 @@ We currently support MongoDB and Postgres, as well as the ability to not use any
 
 Development is a breeze. Once you have installed all your dependencies all the configuration is done for you. using simple The process is outlined [here](docs/development.md).
 
+#### UI
+##### Front-end framework:
+- React-bootstrap [getting-started](https://react-bootstrap.github.io/getting-started.html)
+- React-bootstrap components [here](https://react-bootstrap.github.io/components.html)
+
 #### Unit Tests
 
 Testing with:
 - `mocha` as the test framework
 	- We find all the files we need that have a `-test.js` suffix in the `/app` directory.
 - `jsdom` as my test environment
-
-#### UI
-
-front-end framework:
-- [here](https://react-bootstrap.github.io/getting-started.html)
-- [here](https://react-bootstrap.github.io/components.html)
 
 ```bash
 # Run test once

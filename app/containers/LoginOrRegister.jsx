@@ -90,10 +90,6 @@ class LoginOrRegister extends Component {
                ref="password"
                 placeholder="password"
               />
-              <div className={cx('hint')}>
-                <div>Hint</div>
-                <div>email: example@ninja.com password: ninja</div>
-              </div>
               <p
                 className={cx('message', {
                 'message-show': message && message.length > 0
@@ -103,12 +99,6 @@ class LoginOrRegister extends Component {
                 type="submit"
                 value={isLogin ? 'Login' : 'Register'} />
             </form>
-          </div>
-          <div className={cx('google-container')}>
-            <h1 className={cx('heading')}>Google Login Demo</h1>
-            <a
-              className={cx('button')}
-              href="/auth/google">Login with Google</a>
           </div>
         </div>
       </div>
