@@ -1,0 +1,9 @@
+@import '../common/typography';
+
+.header {
+  @apply --heading;
+  text-align: left;
+}
+
+.description { @apply --normal; }
+.contribute { @apply --small; }

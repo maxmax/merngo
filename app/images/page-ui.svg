@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="598px" height="738px" viewBox="0 0 598 738" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>PageLayout</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PageLayout" sketch:type="MSLayerGroup">
+            <g>
+                <g id="Panel" stroke="#979797" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-9" x="0" y="0" width="598" height="738" rx="2"></rect>
+                </g>
+                <g id="Widget" transform="translate(0.000000, 4.000000)">
+                    <g id="Main" transform="translate(0.000000, 212.000000)">
+                        <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="399" height="522"></rect>
+                        <text sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                            <tspan x="46" y="30">Main</tspan>
+                        </text>
+                    </g>
+                    <g id="Aside" transform="translate(398.000000, 212.000000)">
+                        <rect id="Rectangle-1" stroke="#979797" fill="#F6F6F6" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="522"></rect>
+                        <text sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                            <tspan x="34" y="30">Aside</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(415.000000, 293.000000)">
+                        <rect id="Rectangle-1" stroke="#979797" fill="#B8E986" sketch:type="MSShapeGroup" x="0" y="0" width="168" height="90"></rect>
+                        <text id="Text-Widget" sketch:type="MSTextLayer" font-family="Helvetica" font-size="14" font-weight="normal" fill="#333333">
+                            <tspan x="16" y="23">Text Widget</tspan>
+                        </text>
+                    </g>
+                    <g id="AboutUs-Widget" transform="translate(32.000000, 293.000000)">
+                        <rect id="Rectangle-1" stroke="#979797" fill="#B8E986" sketch:type="MSShapeGroup" x="0" y="0" width="346" height="90"></rect>
+                        <text sketch:type="MSTextLayer" font-family="Helvetica" font-size="14" font-weight="normal" fill="#333333">
+                            <tspan x="16" y="23">AboutUs Widget</tspan>
+                        </text>
+                    </g>
+                    <g id="Contacts" transform="translate(32.000000, 406.000000)">
+                        <rect id="Rectangle-1" stroke="#979797" fill="#B8E986" sketch:type="MSShapeGroup" x="0" y="0" width="346" height="269"></rect>
+                        <text id="AboutUs-Widget" sketch:type="MSTextLayer" font-family="Helvetica" font-size="14" font-weight="normal" fill="#333333">
+                            <tspan x="16" y="23">Contacts</tspan>
+                        </text>
+                    </g>
+                    <g id="Goooglemap" transform="translate(37.000000, 541.000000)">
+                        <rect id="Rectangle-1" stroke="#FFFFFF" fill="#51A3FF" sketch:type="MSShapeGroup" x="0" y="0" width="335" height="126"></rect>
+                        <text id="Googlemap" sketch:type="MSTextLayer" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="16" y="23">Googlemap</tspan>
+                        </text>
+                    </g>
+                    <g id="Jumbotron" transform="translate(3.000000, 0.000000)">
+                        <rect id="Rectangle-1" stroke="#FFFFFF" fill="#51A3FF" sketch:type="MSShapeGroup" x="0" y="0" width="593" height="208"></rect>
+                        <text sketch:type="MSTextLayer" font-family="Helvetica" font-size="11" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="27" y="82">Jumbotron</tspan>
+                            <tspan x="78.9707031" y="82" font-size="14"></tspan>
+                            <tspan x="27" y="98" font-size="14"></tspan>
+                            <tspan x="27" y="115" font-size="24">About Us</tspan>
+                            <tspan x="125.71875" y="115" font-size="14"></tspan>
+                            <tspan x="27" y="144" font-size="14"></tspan>
+                            <tspan x="27" y="161" font-size="13">Page description</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

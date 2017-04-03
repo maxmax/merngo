@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="896px" height="459px" viewBox="0 0 896 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Dashboard" sketch:type="MSLayerGroup">
+            <g id="Panel">
+                <rect id="Rectangle-9" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="598" height="457" rx="2"></rect>
+                <text id="Dashboard" sketch:type="MSTextLayer" font-family="Arial" font-size="24" font-weight="normal" fill="#000000">
+                    <tspan x="16" y="38">Dashboard</tspan>
+                </text>
+            </g>
+            <g id="Widget" transform="translate(0.000000, 44.000000)">
+                <g id="widget" transform="translate(0.000000, 14.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <g id="Oval-1-+-30%" transform="translate(38.000000, 52.000000)">
+                        <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,0 60,0 C26.862915,0 0,26.862915 0,60 C0,93.137085 26.862915,120 60,120 Z" id="Oval-1" stroke="#7ED321" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                        <text id="30%" sketch:type="MSTextLayer" font-family="Arial" font-size="36" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                            <tspan x="25.9736328" y="68">30%</tspan>
+                            <tspan x="98.0263672" y="68" font-size="18" font-weight="bold"></tspan>
+                            <tspan x="43.7138672" y="110.177734" font-size="14">Score</tspan>
+                        </text>
+                    </g>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy" transform="translate(199.000000, 14.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <g id="Oval-1-+-30%" transform="translate(38.000000, 52.000000)">
+                        <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,0 60,0 C26.862915,0 0,26.862915 0,60 C0,93.137085 26.862915,120 60,120 Z" id="Oval-1" stroke="#F57282" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                        <text id="90%" sketch:type="MSTextLayer" font-family="Arial" font-size="36" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                            <tspan x="25.9736328" y="68">90%</tspan>
+                            <tspan x="98.0263672" y="68" font-size="18" font-weight="bold"></tspan>
+                            <tspan x="43.7138672" y="110.177734" font-size="14">Score</tspan>
+                        </text>
+                    </g>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                </g>
+                <g id="Col" transform="translate(693.000000, 0.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <text sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Col</tspan>
+                    </text>
+                </g>
+                <g id="widgetS" transform="translate(695.000000, 214.000000)">
+                    <path d="M0,0 L200,0 L200,200 L0,200 L0,0 Z" id="Rectangle-1" stroke="#D9D5D5" sketch:type="MSShapeGroup"></path>
+                    <path id="Rectangle-1-decoration-1" d="M0,-3 L0,3" stroke="#D9D5D5"></path>
+                    <g id="Oval-1-+-30%" transform="translate(38.000000, 52.000000)">
+                        <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,0 60,0 C26.862915,0 0,26.862915 0,60 C0,93.137085 26.862915,120 60,120 Z" id="Oval-1" stroke="#F57282" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                        <text id="90%" sketch:type="MSTextLayer" font-family="Arial" font-size="36" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                            <tspan x="25.9736328" y="68">90%</tspan>
+                            <tspan x="98.0263672" y="68" font-size="18" font-weight="bold"></tspan>
+                            <tspan x="43.7138672" y="110.177734" font-size="14">Score</tspan>
+                        </text>
+                    </g>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-2" transform="translate(0.000000, 213.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <g id="Oval-1-+-30%" transform="translate(38.000000, 52.000000)">
+                        <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,0 60,0 C26.862915,0 0,26.862915 0,60 C0,93.137085 26.862915,120 60,120 Z" id="Oval-1" stroke="#F6A623" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                        <text id="70%" sketch:type="MSTextLayer" font-family="Arial" font-size="36" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                            <tspan x="25.9736328" y="68">70%</tspan>
+                            <tspan x="98.0263672" y="68" font-size="18" font-weight="bold"></tspan>
+                            <tspan x="43.7138672" y="110.177734" font-size="14">Score</tspan>
+                        </text>
+                    </g>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-4" transform="translate(199.000000, 213.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                    <text id="---Empty" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal">
+                        <tspan x="50" y="109.666992" fill="#000000">   </tspan>
+                        <tspan x="65.0029297" y="109.666992" fill="#4A4A4A">Empty</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-5" transform="translate(398.000000, 213.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                    <text id="---Empty" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal">
+                        <tspan x="50" y="109.666992" fill="#000000">   </tspan>
+                        <tspan x="65.0029297" y="109.666992" fill="#4A4A4A">Empty</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-7" transform="translate(398.000000, 14.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                    <text id="---Has-Error" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal">
+                        <tspan x="50" y="109.666992" fill="#000000">   </tspan>
+                        <tspan x="65.0029297" y="109.666992" fill="#B33948">Has Error</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-6" transform="translate(199.000000, 213.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                    <text id="---Empty" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal">
+                        <tspan x="50" y="109.666992" fill="#000000">   </tspan>
+                        <tspan x="65.0029297" y="109.666992" fill="#4A4A4A">Empty</tspan>
+                    </text>
+                </g>
+                <g id="widget-copy-3" transform="translate(0.000000, 14.000000)">
+                    <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="0" y="0" width="200" height="200"></rect>
+                    <g id="Oval-1-+-30%" transform="translate(38.000000, 52.000000)">
+                        <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,0 60,0 C26.862915,0 0,26.862915 0,60 C0,93.137085 26.862915,120 60,120 Z" id="Oval-1" stroke="#7ED321" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                        <text id="30%" sketch:type="MSTextLayer" font-family="Arial" font-size="36" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                            <tspan x="25.9736328" y="68">30%</tspan>
+                            <tspan x="98.0263672" y="68" font-size="18" font-weight="bold"></tspan>
+                            <tspan x="43.7138672" y="110.177734" font-size="14">Score</tspan>
+                        </text>
+                    </g>
+                    <text id="Widget-title" sketch:type="MSTextLayer" font-family="Arial" font-size="18" font-weight="normal" fill="#000000">
+                        <tspan x="50" y="30">Widget title</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
