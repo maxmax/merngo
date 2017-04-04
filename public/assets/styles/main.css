@@ -24,17 +24,17 @@
 .Q2yjm6nCNaiza_k5a5Jyb {
   display: block;
 }
-._2wAl09C3KGVBxiFrmwdnOi {
-  background-color: #0F9D58;
-  color: #fff;
-}
+/*.success {
+  background-color: var(--colorSalem);
+  color: var(--colorWhite);
+}*/
 
 
 * { box-sizing: border-box; }body {
   margin: 0;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }._36NQSpzGCuxg-jneTII5ou {
-  padding: 8px 24px;
+  padding: 0px;
   height: 100%;
   font-weight: normal;
   font-smoothing: antialiased;
@@ -269,22 +269,22 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 48px;
-  text-align: center;
+  text-align: left;
 }
 
 ._1HbBDcdDJAcG7HP6_RJLr- { font-size: 16px; font-weight: 400; line-height: 24px; }
 
 ._13gkj31IUgcMXwj7s52Zm1 { font-size: 12px; font-weight: 400; line-height: 24px; }
 
-._21wNK7WOMh3wlRPL4JJi15 {
+._1oLOKA6N8YOpo3U2yGkIq6 {
   font-size: 28px;
   font-weight: 700;
   line-height: 48px;
   text-align: center;
 }
 
-.ufweMzr4xbwb5Apyg206C { font-size: 16px; font-weight: 400; line-height: 24px; }
+._2J09NcjH0Tlu1jsNwyly2D { font-size: 16px; font-weight: 400; line-height: 24px; }
 
-._3BFXSzRVxSWmwHAo4Qt0Fv { font-size: 12px; font-weight: 400; line-height: 24px; }
+._3sWQUzBmlhKvYVyyAhLCwK { font-size: 12px; font-weight: 400; line-height: 24px; }
 
 /*# sourceMappingURL=main.css.map*/
