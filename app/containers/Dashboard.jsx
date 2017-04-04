@@ -19,6 +19,7 @@ const panelsInstance = (
      <strong>TODO:</strong>
      <br />
      <ol>
+        <li>https://github.com/maxmax/merngo/blob/master/app/pages/Dashboard.jsx</li>
         <li>Create "four, three..." responsive blocks, use based bootstrap grid. (https://react-bootstrap.github.io/components.html#grid)</li>
         <li>Blocks must be of the same height, create "component FlexBox" and use this component.</li>
         <li>Create a new component with different values (Score or Telemetry - value="34234", value="25%") and make render in col.</li>
