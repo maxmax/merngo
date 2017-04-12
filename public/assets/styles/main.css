@@ -1,19 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);._28v_DmI7IXO8hFZYkQmRE7 {
-  padding: 0 28px;
-}
-._2HHJ_852M42LCiYML0PJN6 {
-  display: inline-block;
-  text-decoration: none;
-  padding: 16px 32px;
-  color: #000;
-}
-._3P_DiM0WiSn0pHenG_E3bG {
-  font-size: 28px;
-}
-.H_gwELZPuU4PzKFAU_mYK {
-  color: #2196F3;
-}
-._1emf_74rugs0kAoH_3qQcl {
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);._1emf_74rugs0kAoH_3qQcl {
   display: none;
   padding: 12px 0;
   border-radius: 4px;
@@ -46,6 +31,24 @@
 }
 
 */
+._28v_DmI7IXO8hFZYkQmRE7 {
+  background-color: #2c3948;
+  border-color: #192028;
+  z-index: 3;
+  position: relative;
+}
+._2HHJ_852M42LCiYML0PJN6 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 32px;
+  color: #000;
+}
+._3P_DiM0WiSn0pHenG_E3bG {
+  font-size: 28px;
+}
+.H_gwELZPuU4PzKFAU_mYK {
+  color: #2196F3;
+}
 
 ._2OA63vNiY8oZwIcMfbXibB {
   width: 100%;
@@ -176,6 +179,76 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+._2gY2V1vy0Nivd8ZoqfCinL{
+  z-index: 2;
+  position: relative;
+  padding-left: 160px;
+  padding-right: 20px;
+  max-width: 100%;
+}
+._2mSHil20jf_dhm1ED01GkO {
+  position: fixed;
+  width: 140px;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: #242c36;
+  border-right: 1px solid transparent;
+  overflow: auto;
+  z-index: 2;
+}
+._1xPhOMc4OovciJFqEkHsYv{
+  background-color: transparent;
+  border-width: 0px;
+  border-top-width: 1px;
+  font-size: 12px;
+  position: relative;
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: 10px
+}
+._1xPhOMc4OovciJFqEkHsYv:first-child {
+  border-top: 0px;
+  margin-top: 90px;
+}
+._1xPhOMc4OovciJFqEkHsYv:last-child {
+  margin-bottom: 90px;
+}
+._2uLzlNgAuvH9uzN0zV2029{
+  display: block;
+  padding: 60px 15px 15px 15px;
+  position: relative;
+  color: #dadada;
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center
+}
+._2uLzlNgAuvH9uzN0zV2029:active, ._2uLzlNgAuvH9uzN0zV2029:hover, ._2uLzlNgAuvH9uzN0zV2029:focus {
+  color: #4cae4c;
+  text-decoration: none;
+}
+._1UVlZKiKNxyVsfQJxXiwhF{
+  color: #4cae4c;
+}
+/*.active{
+
+}*/
+._3Ah6073EccqZmkf7WhmMQp{
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -12px;
+  font-size: 24px;
+}
+/*sidebar
+.navbar {
+  z-index: 2;
+}
+
+.container-fluid.page.dashboard{
+  padding-left: 160px;
+  padding-right: 20px;
+}*/
 ._2D52FtEsC5k9J1Gfeny8sU {
   width: 420px;
   margin: 0 auto;

@@ -1,0 +1,72 @@
+@import '../common/colors';
+@import '../common/typography';
+
+.sidebar {
+  position: fixed;
+  width: 140px;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: var(--colorBlueDark);
+  border-right: 1px solid transparent;
+  overflow: auto;
+  z-index: 2;
+}
+
+.item{
+  background-color: transparent;
+  border-width: 0px;
+  border-top-width: 1px;
+  font-size: 12px;
+  position: relative;
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+  &:first-child{
+    border-top: 0px;
+    margin-top: 90px;
+  }
+  &:last-child{
+    margin-bottom: 90px;
+  }
+}
+
+.link{
+  display: block;
+  padding: 60px 15px 15px 15px;
+  position: relative;
+  color: var(--colorGreyLight);
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  &:active, &:hover, &:focus{
+    color: var(--colorGreen);
+    text-decoration: none;
+  }
+}
+
+.active{
+  color: var(--colorGreen);
+}
+
+/*.active{
+
+}*/
+
+.icon{
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -12px;
+  font-size: 24px;
+}
+
+/*sidebar
+.navbar {
+  z-index: 2;
+}
+
+.container-fluid.page.dashboard{
+  padding-left: 160px;
+  padding-right: 20px;
+}*/

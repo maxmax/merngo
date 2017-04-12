@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
-
 import Layout from '../pages/DashboardLayout';
-import DashboardContainer from '../containers/Dashboard';
 
-class Dashboard extends Component {
+class Telemetry extends Component {
   getMetaData() {
     return {
       title: this.pageTitle(),
@@ -14,7 +12,7 @@ class Dashboard extends Component {
   }
 
   pageTitle() {
-    return 'Dashboard';
+    return 'Telemetry';
   }
 
   pageMeta() {
@@ -30,10 +28,10 @@ class Dashboard extends Component {
   render() {
     return (
       <Layout {...this.getMetaData()}>
-        <DashboardContainer {...this.props} />
+        <section>Render Telemetry container...</section>
       </Layout>
     );
   }
 }
 
-export default Dashboard;
+export default Telemetry;
