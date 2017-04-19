@@ -1,6 +1,7 @@
 import React from 'react';
 import Page from '../pages/Page';
 import AppContainer from '../containers/App';
+//import Navigation from '../containers/Navigation';
 import { title, meta, link } from './assets';
 
 const App = props => (
@@ -10,4 +11,3 @@ const App = props => (
 );
 
 export default App;
-

@@ -21,7 +21,7 @@ const App = ({children}) => {
     <div className={cx('app')}>
       <Navigation />
       <Message />
-        {children}
+      {children}
     </div>
   );
 };

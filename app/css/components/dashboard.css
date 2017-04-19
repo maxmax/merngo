@@ -1,0 +1,10 @@
+@import '../common/colors';
+@import '../common/typography';
+
+.dashboard-layout{
+  z-index: 2;
+  position: relative;
+  padding-left: 160px;
+  padding-right: 20px;
+  max-width: 100%;
+}
