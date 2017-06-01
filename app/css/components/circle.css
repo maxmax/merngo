@@ -1,0 +1,61 @@
+@import '../common/colors';
+
+.circle{
+  position: relative;
+  width: 100px;
+  line-height: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--colorGreySmple);
+  background-image:
+  linear-gradient(to right, transparent 50%, var(--colorDarkerGreen) 0);
+  color: transparent;
+  text-align: center;
+}
+
+@keyframes spin {
+  to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+  50% { background: var(--colorDarkerGreen); }
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  width: 50%; height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  animation: spin 50s linear infinite,
+             bg 100s step-end infinite;
+  animation-play-state: paused;
+  animation-delay: inherit;
+}
+
+.circle[style="animation-delay: -100s;"]{
+  background: var(--colorDarkerGreen);
+}
+
+.rate{
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 92%;
+  color: var(--colorDarkerGreen);
+  text-align: center;
+  line-height: 1;
+  padding-top: 32%;
+  height: 92%;
+  border-radius: 200%;
+  background: rgb(255, 255, 255);
+}
+
+.rate span{
+  font-size: 22px;
+}
+
+.rate small{
+  display: block;
+}

@@ -3,6 +3,8 @@
   --colorBlack:               #000;
   --colorWhite:               #fff;
   --colorGreyLight:           #dadada;
+  --colorGreySmple:           #cfcfcf;
+  --colorGreyText:            #555555;
   --colorDodgerBlue:          #2196F3;
   --colorSalem:               #0F9D58;
   --colorDarkerSalem:         #0b6e3e;
@@ -15,6 +17,9 @@
   --colorCrimson:             #ed193a;
   --colorGreen:               #4cae4c;
   --colorBlueDark:            #242c36;
+  --colorLightGreen:          #8be28d;
+  --colorDarkerGreen:         #009688;
+  --colorOrange:              #FF5722;
   --colorDarkerCrimson:       color(var(--colorCrimson) blackness(+20%));
 
 }

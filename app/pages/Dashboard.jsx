@@ -38,17 +38,7 @@ class Dashboard extends Component {
     return [];
   }
 
-  //componentDidMount() {
-  //  axios.get(`https://ghibliapi.herokuapp.com/films`)
-  //    .then(res => {
-  //      const int = res.data.map(obj => obj);
-  //      this.setState({ int });
-  //    });
-  //}
-
   render() {
-    //console.log("1:", this.state);
-    //console.log("2:", this.props);
     return (
       <Layout {...this.getMetaData()}>
         <DashboardContainer {...this.props} />

@@ -2,6 +2,11 @@
 @import '../common/colors';
 @import '../common/typography';
 
+.middle{
+  width: 600px;
+  max-width: 100%;
+}
+
 .message {
   display: none;
   padding: 12px 0;
