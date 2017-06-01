@@ -18,8 +18,8 @@ const buildPage = ({ componentHTML, initialState, headAssets }) => {
   <head>
     ${headAssets.title.toString()}
     ${headAssets.meta.toString()}
-    ${headAssets.link.toString()}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    ${headAssets.link.toString()}
     ${createTrackingScript()}
   </head>
   <body>
