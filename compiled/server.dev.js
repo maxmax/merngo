@@ -10357,8 +10357,8 @@ var Chart = function (_Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
-          rate = _props.rate,
-          title = _props.title;
+          title = _props.title,
+          children = _props.children;
 
 
       return _react2.default.createElement(
@@ -10367,66 +10367,12 @@ var Chart = function (_Component) {
         _react2.default.createElement(
           'figcaption',
           null,
-          'A graph that shows the number of fruit collected'
+          title
         ),
         _react2.default.createElement(
           'svg',
-          { width: '420', height: '150', role: 'img' },
-          _react2.default.createElement(
-            'title',
-            { id: 'title' },
-            'A bart chart showing information'
-          ),
-          _react2.default.createElement(
-            'g',
-            { className: cx('bar') },
-            _react2.default.createElement('rect', { width: '40', height: '19' }),
-            _react2.default.createElement(
-              'text',
-              { x: '55', y: '9.5', dy: '.35em' },
-              '4 apples'
-            )
-          ),
-          _react2.default.createElement(
-            'g',
-            { className: cx('bar') },
-            _react2.default.createElement('rect', { width: '80', height: '19', y: '20' }),
-            _react2.default.createElement(
-              'text',
-              { x: '95', y: '28', dy: '.35em' },
-              '8 bananas'
-            )
-          ),
-          _react2.default.createElement(
-            'g',
-            { className: cx('bar') },
-            _react2.default.createElement('rect', { width: '150', height: '19', y: '40' }),
-            _react2.default.createElement(
-              'text',
-              { x: '160', y: '48', dy: '.35em' },
-              '15 kiwis'
-            )
-          ),
-          _react2.default.createElement(
-            'g',
-            { className: cx('bar') },
-            _react2.default.createElement('rect', { width: '160', height: '19', y: '60' }),
-            _react2.default.createElement(
-              'text',
-              { x: '171', y: '68', dy: '.35em' },
-              '16 oranges'
-            )
-          ),
-          _react2.default.createElement(
-            'g',
-            { className: cx('bar') },
-            _react2.default.createElement('rect', { width: '230', height: '19', y: '80' }),
-            _react2.default.createElement(
-              'text',
-              { x: '245', y: '88', dy: '.35em' },
-              '23 lemons'
-            )
-          )
+          { width: '520', height: '520', role: 'img' },
+          children
         )
       );
     }
@@ -10436,12 +10382,11 @@ var Chart = function (_Component) {
 }(_react.Component);
 
 Chart.propTypes = {
-  rate: _react.PropTypes.string,
   title: _react.PropTypes.string
 };
 Chart.defaultProps = {
-  rate: "60",
-  title: "Info"
+  title: "A bar chart showing information",
+  children: ""
 };
 exports.default = Chart;
 
@@ -11527,46 +11472,107 @@ var ChartsContainer = function (_Component) {
     var _this = _possibleConstructorReturn(this, (ChartsContainer.__proto__ || Object.getPrototypeOf(ChartsContainer)).call(this, props));
 
     _this.state = {
-      data: []
+      data: [],
+      title: [],
+      beers: []
     };
     return _this;
   }
 
   _createClass(ChartsContainer, [{
-    key: 'getIntFilms',
-    value: function getIntFilms() {
+    key: '_getFilms',
+    value: function _getFilms() {
       return _axios2.default.get('https://ghibliapi.herokuapp.com/films/');
     }
   }, {
-    key: 'getIntFilm',
-    value: function getIntFilm() {
+    key: '_getTitle',
+    value: function _getTitle() {
       return _axios2.default.get('https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49');
+    }
+  }, {
+    key: '_getBeers',
+    value: function _getBeers() {
+      return _axios2.default.get('https://api.punkapi.com/v2/beers');
     }
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
+      var _this2 = this;
 
-      console.log("Teeesttt!");
+      _axios2.default.all([this._getFilms(), this._getTitle(), this._getBeers()]).then(_axios2.default.spread(function (films, title, beers) {
+        _this2.setState({
+          data: films.data,
+          title: title.data,
+          beers: beers.data
+        });
+      }));
     }
   }, {
     key: 'render',
     value: function render() {
 
-      console.log("ChartsContainer:", this.state.data);
+      var beersidu = this.state.beers.map(function (el, index) {
+        var inty = el.id * 20;
+        var intidu = el.ibu || 0;
+        return _react2.default.createElement(
+          'g',
+          { key: index },
+          _react2.default.createElement('rect', { width: intidu + 2, height: '5', y: inty }),
+          _react2.default.createElement(
+            'text',
+            { x: intidu + 20, y: inty, dy: '.35em', height: '20' },
+            '(',
+            intidu,
+            ') ',
+            el.name
+          )
+        );
+      });
+
+      var beersebc = this.state.beers.map(function (el, index) {
+        var inty = el.id * 20;
+        var intval = el.ebc || 0;
+        return _react2.default.createElement(
+          'g',
+          { key: index, className: 'ebc' },
+          _react2.default.createElement('rect', { width: intval + 2, height: '5', y: inty }),
+          _react2.default.createElement(
+            'text',
+            { x: intval + 20, y: inty, dy: '.35em', height: '20' },
+            '(',
+            intval,
+            ') ',
+            el.name
+          )
+        );
+      });
 
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           _reactBootstrap.Panel,
-          { header: 'Fruit' },
+          { header: 'Foods' },
           _react2.default.createElement(
             _reactBootstrap.Row,
             null,
             _react2.default.createElement(
               _reactBootstrap.Col,
-              { xs: 12, md: 12, lg: 12 },
-              _react2.default.createElement(_Chart2.default, null)
+              { xs: 12, md: 6, lg: 6 },
+              _react2.default.createElement(
+                _Chart2.default,
+                { title: 'A bar chart showing beers idu' },
+                beersidu
+              )
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Col,
+              { xs: 12, md: 6, lg: 6 },
+              _react2.default.createElement(
+                _Chart2.default,
+                { title: 'A bar chart showing beers ebc' },
+                beersebc
+              )
             )
           )
         )
