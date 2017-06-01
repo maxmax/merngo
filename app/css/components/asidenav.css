@@ -1,5 +1,4 @@
 @import '../common/colors';
-@import '../common/typography';
 
 .sidebar {
   position: fixed;
@@ -22,13 +21,15 @@
   border-width: 0px;
   padding-left: 0px;
   padding-right: 10px;
-  &:first-child{
-    border-top: 0px;
-    margin-top: 90px;
-  }
-  &:last-child{
-    margin-bottom: 90px;
-  }
+}
+
+.item:first-child{
+  border-top: 0px;
+  margin-top: 90px;
+}
+
+.item:last-child{
+  margin-bottom: 90px;
 }
 
 .link{
@@ -39,10 +40,11 @@
   font-weight: 100;
   text-decoration: none;
   text-align: center;
-  &:active, &:hover, &:focus{
-    color: var(--colorGreen);
-    text-decoration: none;
-  }
+}
+
+.link:active, .link:hover, .link:focus{
+  color: var(--colorGreen);
+  text-decoration: none;
 }
 
 .active{
