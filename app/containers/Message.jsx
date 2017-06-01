@@ -16,7 +16,7 @@ const cx = classNames.bind(styles);
 //    onClick={dismissMessage}>{message}</div>
 //);
 const Message = ({message, type, dismissMessage}) => (
-  <Grid>
+  <Grid className={cx('middle')}>
     <Alert
       className={cx('message', {
         show: message && message.length > 0,

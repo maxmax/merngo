@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
 import Layout from '../pages/DashboardLayout';
+import ChartsContainer from '../containers/Charts';
 
 class Telemetry extends Component {
   getMetaData() {
@@ -28,7 +29,7 @@ class Telemetry extends Component {
   render() {
     return (
       <Layout {...this.getMetaData()}>
-        <section>Render Telemetry container...</section>
+        <ChartsContainer {...this.props} />
       </Layout>
     );
   }

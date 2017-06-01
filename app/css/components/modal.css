@@ -1,0 +1,20 @@
+.modal{
+  position: fixed;
+  z-index: 4;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.43);
+}
+
+.modal > section{
+  width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

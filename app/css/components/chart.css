@@ -1,0 +1,43 @@
+@import '../common/colors';
+
+.chart{
+  position: relative;
+}
+
+.chart > figcaption {
+  font-weight: 500;
+  color: var(--colorBlack);
+  margin-bottom: 20px;
+}
+
+.chart > svg {
+  max-width: 100%;
+}
+
+.chart > svg > g > rect {
+  fill: var(--colorDarkerGreen);
+  transition: fill .3s ease;
+  cursor: pointer;
+}
+
+.chart > svg > g[class="ebc"] > rect {
+  fill: var(--colorDodgerBlue);
+}
+
+.chart > svg > g > rect[width="2"] {
+  fill: var(--colorOrange);
+}
+
+.bar > svg > g > text{
+  fill: var(--colorGreyText);
+}
+
+.bar:hover,
+.bar:focus {
+  fill: var(--colorDarkerGreen) !important;
+}
+
+.bar:hover text,
+.bar:focus text {
+  fill: var(--colorDarkerGreen);
+}

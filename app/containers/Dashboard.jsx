@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import { Grid, Row, Col, Panel } from 'react-bootstrap';
-import Avatar from '../components/Avatar';
-import DataShow from '../components/DataShow';
+import Thumb from '../components/Thumb';
+import Circle from '../components/Circle';
+import Modal from '../components/Modal';
 
-import loaderimg from '../images/loader.gif';
+import classNames from 'classnames/bind';
+import styles from '../css/components/dashboard';
+const cx = classNames.bind(styles);
 
 class DashboardContainer extends Component {
 
@@ -13,61 +16,69 @@ class DashboardContainer extends Component {
     super(props);
 
     this.state = {
-      name: '',
-      avatar: loaderimg,
-      created: '',
-      location: '',
-      link: '',
-      updated: '',
-      bio: ''
+      data: [],
+      isToggleOn: false,
+      info: []
     };
   }
 
   componentDidMount() {
-    axios.get(`https://api.github.com/users/` + `maxmax`)
-      //.then(res => {
-      //  const int = res.data.map(obj => obj);
-      //  this.setState({ int });
-      //});
-      //.catch(err => console.log(err));
-      //https://ghibliapi.herokuapp.com/films
-      .then(response => {
-        this.setState({
-          name: response.data.name,
-          avatar: response.data.avatar_url,
-          created: response.data.created_at,
-          updated: response.data.updated_at,
-          bio: response.data.bio,
-          location: response.data.location,
-          link: response.data.html_url
+    axios
+      .get('https://ghibliapi.herokuapp.com/films/')
+      .then(({ data })=> {
+      	this.setState({
+          data: data
         });
-        //  console.log(response.data);
-        //  console.log(response.status); // ex.: 200
-      });
+      })
+      .catch((err)=> {})
+  }
+
+  handleClick(int) {
+    this.setState(prevState => ({
+      isToggleOn: true,
+      info: int
+    }));
+  }
+
+  handleClose() {
+    this.setState(prevState => ({
+      isToggleOn: false
+    }));
   }
 
   render() {
 
+    const child = this.state.data.map((el, index) => {
+      return <Col xs={12} md={4} lg={4}  key={index}>
+        <Thumb className="films">
+          <h4>{ el.title }</h4>
+          <small>{ el.director }</small>
+          <small> | { el.release_date}</small>
+          <br />
+          <br />
+          <a href="#" onClick={(e) => this.handleClick(el.description)}>
+            <Circle rate={el.rt_score} title="RT Score" />
+          </a>
+        </Thumb>
+      </Col>
+    });
+
+    const info = (
+      <Modal class="info">
+        <a href="#" onClick={(e) => this.handleClose(this)} className="close">x</a>
+        <br />
+        <p>{this.state.info}</p>
+      </Modal>
+    );
+
     return (
       <div>
-        <Panel header={'Dashboard'}>
-          <Row className="show-grid">
-            <Col xs={12} md={4} lg={3}>
-              <Avatar
-                name={this.state.name}
-                avatar={this.state.avatar} />
-            </Col>
-            <Col xs={12} md={8} lg={9}>
-              <DataShow
-                name={this.state.name}
-                created={this.state.created}
-                updated={this.state.updated}
-                bio={this.state.bio}
-                location={this.state.location}
-                link={this.state.link} />
-            </Col>
+        <Panel header={'Dashboard'} footer="Panel footer" className={cx('panel-films')}>
+          <Row className={cx('films-grid')} fill>
+            {child}
           </Row>
         </Panel>
+        {this.state.isToggleOn ? info : null}
       </div>
     );
   }
