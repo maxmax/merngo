@@ -2,23 +2,37 @@
 @import '../common/typography';
 
 .navigation {
-  background-color: #2c3948;
-  border-color: #192028;
+  background-color: var(--colorBlueHide);
+  border-color: var(--colorBlueBlack);
   z-index: 3;
   position: relative;
 }
 
-.item {
+.navigation ul[class*="nav"] > li[class="active"] > a{
+  background-color: transparent;
+}
+
+/*.navigation ul[class*="nav"]{
+  border: 1px solid green;
+}
+
+.navigation ul[class*="nav"] > li{
+  border: 1px solid green;
+}
+
+*/
+
+/*.navigation ul[class*="nav"] li[class="presentation"] {
   display: inline-block;
   text-decoration: none;
   padding: 16px 32px;
   color: var(--colorBlack);
 }
 
-.logo {
-  font-size: var(--fontHuge);
-}
-
 .active {
   color: var(--colorDodgerBlue);
+}*/
+
+.logo {
+  font-size: var(--fontHuge);
 }

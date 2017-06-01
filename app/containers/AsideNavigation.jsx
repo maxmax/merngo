@@ -12,19 +12,19 @@ const listgroupInstance = (
     <ListGroupItem>
       <Link to="/dashboard" activeClassName={cx('active')}>
         <span>Dashboard</span>
-        <Glyphicon glyph="dashboard" className={cx('icon')} />
+        <Glyphicon glyph="dashboard" />
       </Link>
     </ListGroupItem>
     <ListGroupItem>
       <Link to="/telemetry" activeClassName={cx('active')}>
         <span>Telemetry</span>
-        <Glyphicon glyph="tasks" className={cx('icon')} />
+        <Glyphicon glyph="tasks" />
       </Link>
     </ListGroupItem>
     <ListGroupItem>
       <Link to="/settings" activeClassName={cx('active')}>
         <span>Settings</span>
-        <Glyphicon glyph="cog" className={cx('icon')} />
+        <Glyphicon glyph="cog" />
       </Link>
     </ListGroupItem>
   </ListGroup>

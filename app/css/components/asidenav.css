@@ -55,7 +55,7 @@
 
 }*/
 
-.icon{
+.sidebar li[class="list-group-item"] > a span[class*="glyphicon"]{
   position: absolute;
   top: 15px;
   left: 50%;

@@ -16,7 +16,7 @@ const Navigation = ({ user, logOut }) => {
           <Navbar.Brand>
             <Link
               to="/"
-              className={cx('item', 'logo')} >mernGo</Link>
+              className={cx('logo')} >mernGo</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

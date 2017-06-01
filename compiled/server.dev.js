@@ -11245,10 +11245,10 @@ var listgroupInstance = _react2.default.createElement(
   null,
   _react2.default.createElement(
     _reactBootstrap.ListGroupItem,
-    { className: cx('item') },
+    null,
     _react2.default.createElement(
       _reactRouter.Link,
-      { to: '/dashboard', className: cx('link'), activeClassName: cx('active') },
+      { to: '/dashboard', activeClassName: cx('active') },
       _react2.default.createElement(
         'span',
         null,
@@ -11259,10 +11259,10 @@ var listgroupInstance = _react2.default.createElement(
   ),
   _react2.default.createElement(
     _reactBootstrap.ListGroupItem,
-    { className: cx('item') },
+    null,
     _react2.default.createElement(
       _reactRouter.Link,
-      { to: '/telemetry', className: cx('link'), activeClassName: cx('active') },
+      { to: '/telemetry', activeClassName: cx('active') },
       _react2.default.createElement(
         'span',
         null,
@@ -11273,10 +11273,10 @@ var listgroupInstance = _react2.default.createElement(
   ),
   _react2.default.createElement(
     _reactBootstrap.ListGroupItem,
-    { className: cx('item') },
+    null,
     _react2.default.createElement(
       _reactRouter.Link,
-      { to: '/settings', className: cx('link'), activeClassName: cx('active') },
+      { to: '/settings', activeClassName: cx('active') },
       _react2.default.createElement(
         'span',
         null,
@@ -16022,8 +16022,6 @@ module.exports = {
 
 module.exports = {
 	"sidebar": "_2mSHil20jf_dhm1ED01GkO",
-	"item": "_1xPhOMc4OovciJFqEkHsYv",
-	"link": "_2uLzlNgAuvH9uzN0zV2029",
 	"active": "_1UVlZKiKNxyVsfQJxXiwhF",
 	"icon": "_3Ah6073EccqZmkf7WhmMQp"
 };
