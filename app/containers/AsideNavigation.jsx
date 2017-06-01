@@ -9,20 +9,20 @@ const cx = classNames.bind(styles);
 
 const listgroupInstance = (
   <ListGroup>
-    <ListGroupItem className={cx('item')}>
-      <Link to="/dashboard" className={cx('link')} activeClassName={cx('active')}>
+    <ListGroupItem>
+      <Link to="/dashboard" activeClassName={cx('active')}>
         <span>Dashboard</span>
         <Glyphicon glyph="dashboard" className={cx('icon')} />
       </Link>
     </ListGroupItem>
-    <ListGroupItem className={cx('item')}>
-      <Link to="/telemetry" className={cx('link')} activeClassName={cx('active')}>
+    <ListGroupItem>
+      <Link to="/telemetry" activeClassName={cx('active')}>
         <span>Telemetry</span>
         <Glyphicon glyph="tasks" className={cx('icon')} />
       </Link>
     </ListGroupItem>
-    <ListGroupItem className={cx('item')}>
-      <Link to="/settings" className={cx('link')} activeClassName={cx('active')}>
+    <ListGroupItem>
+      <Link to="/settings" activeClassName={cx('active')}>
         <span>Settings</span>
         <Glyphicon glyph="cog" className={cx('icon')} />
       </Link>
