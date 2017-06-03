@@ -8,8 +8,21 @@
   background: rgba(0, 0, 0, 0.43);
 }
 
+.modal[role="aside"]{
+  background: rgba(255, 255, 255);
+  right: 0px;
+  left: auto;
+  width: 300px;
+  border-left: 1px solid rgba(204, 204, 204, 0.39);
+}
+
+/*.modal[role="aside"] > section{
+  border: 1px solid rgba(204, 204, 204, 0.39);
+}*/
+
 .modal > section{
   width: 600px;
+  max-width: 100%;
   margin: 0 auto;
   background: #fff;
   padding: 20px;

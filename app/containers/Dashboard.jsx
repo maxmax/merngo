@@ -56,7 +56,7 @@ class DashboardContainer extends Component {
           <small> | { el.release_date}</small>
           <br />
           <br />
-          <a href="#" onClick={(e) => this.handleClick(el.description)}>
+          <a onClick={(e) => this.handleClick(el.description)}>
             <Circle rate={el.rt_score} title="RT Score" />
           </a>
         </Thumb>
@@ -65,7 +65,7 @@ class DashboardContainer extends Component {
 
     const info = (
       <Modal class="info">
-        <a href="#" onClick={(e) => this.handleClose(this)} className="close">x</a>
+        <a onClick={(e) => this.handleClose(this)} className="close">x</a>
         <br />
         <p>{this.state.info}</p>
       </Modal>

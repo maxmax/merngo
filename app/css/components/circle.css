@@ -11,6 +11,7 @@
   linear-gradient(to right, transparent 50%, var(--colorDarkerGreen) 0);
   color: transparent;
   text-align: center;
+  cursor: pointer;
 }
 
 @keyframes spin {

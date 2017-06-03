@@ -7,20 +7,20 @@ const cx = classNames.bind(styles);
 export default class Modal extends Component {
 
   static propTypes = {
-    className: PropTypes.string
+    role: PropTypes.string
   }
 
   static defaultProps = {
-    className: "auto",
+    role: "auto",
     children: ""
   }
 
   render() {
 
-    const { className, children } = this.props;
+    const { role, children } = this.props;
 
     return (
-      <div className={cx('modal')}>
+      <div className={cx('modal')} role={role}>
         <section>{children}</section>
       </div>
     );
