@@ -22,7 +22,7 @@ export default class Chart extends Component {
     return (
       <figure className={cx('chart')}>
         <figcaption>{title}</figcaption>
-        <svg width="520" height="520" role="img">
+        <svg width="520" height="420" role="img">
           {children}
         </svg>
       </figure>

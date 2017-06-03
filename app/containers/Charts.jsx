@@ -12,53 +12,28 @@ class ChartsContainer extends Component {
 
     this.state = {
       data: [],
-      title: [],
-      beers: [],
-      isToggleOn: false,
-      info: []
+      page: '1',
+      perPage: '10'
     };
   }
 
-  _getFilms(){
-    return axios.get('https://ghibliapi.herokuapp.com/films/');
+  _getData(){
+    return axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=20');
   }
 
-  _getTitle(){
-    return axios.get('https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49');
-  }
-
-  _getBeers(){
-    //return axios.get('https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6');
-    return axios.get('https://api.punkapi.com/v2/beers');
-  }
-
+  //TODO: .catch error
   componentDidMount() {
-    axios.all([this._getFilms(), this._getTitle(), this._getBeers()])
-      .then(axios.spread((films, title, beers) => {
+    axios.all([this._getData()])
+      .then(axios.spread((v, beers) => {
         this.setState({
-          data: films.data,
-          title: title.data,
-          beers: beers.data
+          data: v.data,
         });
       }));
   }
 
-  handleShow(e) {
-    this.setState(prevState => ({
-      isToggleOn: true,
-      info: e
-    }));
-  }
-
-  handleClose() {
-    this.setState(prevState => ({
-      isToggleOn: false
-    }));
-  }
-
   render() {
 
-    const beersidu = this.state.beers.map((el, index) => {
+    const beersidu = this.state.data.map((el, index) => {
       const inty = (index * 20 + 10);
       const intidu = (el.ibu || 0);
       return <g  key={index}>
@@ -67,7 +42,7 @@ class ChartsContainer extends Component {
       </g>
     });
 
-    const beersebc = this.state.beers.map((el, index) => {
+    const beersebc = this.state.data.map((el, index) => {
       const inty = (index * 20 + 10);
       const intval = (el.ebc || 0);
       return <g  key={index} className="ebc">
@@ -75,39 +50,6 @@ class ChartsContainer extends Component {
         <text x={intval + 20} y={inty} dy=".35em" height="20">({intval}) { el.name }</text>
       </g>
     });
-
-    const beer = this.state.beers.map((el) => {
-
-      const intebc = (el.ebc || 0);
-      const intidu = (el.ibu || 0);
-      const name = (el.name || '');
-      const img = (el.image_url || '');
-
-      return <tr key={el.id} onClick={(e) => this.handleShow(el)}>
-        <td>{ name }</td>
-        <td>
-          <img src={ img } alt={ name } width="18px" />
-        </td>
-        <td>{ intidu }</td>
-        <td>
-          { intebc }
-        </td>
-      </tr>
-    });
-
-    const info = (
-      <Modal role="aside">
-        <a onClick={(e) => this.handleClose(this)} className="close">x</a>
-        <br />
-        <h3>{this.state.info.name} <small>{this.state.info.first_brewed}</small></h3>
-        <b className="small">{this.state.info.tagline}</b>
-        <br />
-        <p>{this.state.info.description}</p>
-        <blockquote className="small">
-          <p>{this.state.info.brewers_tips}</p>
-        </blockquote>
-      </Modal>
-    );
 
     return (
       <div>
@@ -123,24 +65,8 @@ class ChartsContainer extends Component {
                 {beersebc}
               </Chart>
             </Col>
-            <Col xs={12} md={12} lg={12}>
-            </Col>
           </Row>
-          <table className="table table-striped" fill>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Icon</th>
-                <th>ibu</th>
-                <th>ebc</th>
-              </tr>
-            </thead>
-            <tbody>
-              {beer}
-            </tbody>
-          </table>
         </Panel>
-        {this.state.isToggleOn ? info : null}
       </div>
     );
   }
