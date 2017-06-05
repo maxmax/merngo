@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
-import Page from '../pages/Page';
-import AboutContainer from '../containers/About';
+//import Page from '../pages/Page';
+import Layout from '../pages/DashboardLayout';
 import UsersContainer from '../containers/Users';
 
-class About extends Component {
+class UserPage extends Component {
 
   getMetaData() {
     return {
@@ -15,7 +15,7 @@ class About extends Component {
   }
 
   pageTitle() {
-    return 'About | mernGo';
+    return 'User Page | mernGo';
   }
 
   pageMeta() {
@@ -31,13 +31,13 @@ class About extends Component {
   render() {
 
     return (
-      <Page {...this.getMetaData()}>
+      <Layout {...this.getMetaData()}>
         <Grid fluid>
-          <AboutContainer {...this.props} />
+          <UsersContainer {...this.props} data="data.json" />
         </Grid>
-      </Page>
+      </Layout>
     );
   }
 }
 
-export default About;
+export default UserPage;
