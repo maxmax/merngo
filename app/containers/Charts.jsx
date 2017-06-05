@@ -11,7 +11,7 @@ class ChartsContainer extends Component {
     super(props);
 
     this.state = {
-      data: [],
+      data: null,
       page: '1',
       perPage: '10'
     };
@@ -32,6 +32,8 @@ class ChartsContainer extends Component {
   }
 
   render() {
+
+    if (!this.state.data) { return (<p>Loading Beers charts...</p>); }
 
     const beersidu = this.state.data.map((el, index) => {
       const inty = (index * 20 + 10);

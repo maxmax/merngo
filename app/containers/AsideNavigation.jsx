@@ -22,6 +22,12 @@ const listgroupInstance = (
       </Link>
     </ListGroupItem>
     <ListGroupItem>
+      <Link to="/users-page" activeClassName={cx('active')}>
+        <span>Users</span>
+        <Glyphicon glyph="user" />
+      </Link>
+    </ListGroupItem>
+    <ListGroupItem>
       <Link to="/settings" activeClassName={cx('active')}>
         <span>Settings</span>
         <Glyphicon glyph="cog" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import { fetchVoteData } from './fetch-data';
-import { App, Home, Vote, Dashboard, Telemetry, Settings, About, UiPage, Tasks, Guide, LoginOrRegister } from './pages';
+import { App, Home, Vote, Dashboard, Telemetry, UserPage, Settings, About, UiPage, Tasks, Guide, LoginOrRegister } from './pages';
 
 /*
  * @param {Redux Store}
@@ -37,6 +37,7 @@ export default (store) => {
       <Route path="login" component={LoginOrRegister} onEnter={redirectAuth} />
       <Route path="dashboard" component={Dashboard} onEnter={requireAuth} />
       <Route path="telemetry" component={Telemetry} onEnter={requireAuth} />
+      <Route path="users-page" component={UserPage} onEnter={requireAuth} />
       <Route path="settings" component={Settings} onEnter={requireAuth} />
       <Route path="about" component={About} />
       <Route path="ui-page" component={UiPage} />

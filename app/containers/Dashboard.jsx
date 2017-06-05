@@ -16,7 +16,7 @@ class DashboardContainer extends Component {
     super(props);
 
     this.state = {
-      data: [],
+      data: null,
       isToggleOn: false,
       info: []
     };
@@ -47,6 +47,8 @@ class DashboardContainer extends Component {
   }
 
   render() {
+
+    if (!this.state.data) { return (<p>Dashboard Loading...</p>); }
 
     const child = this.state.data.map((el, index) => {
       return <Col xs={12} md={4} lg={4}  key={index}>

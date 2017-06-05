@@ -1,0 +1,7 @@
+.user{
+  /*border: 1px solid green;*/
+}
+
+.user [class="thumbnail-caption"]{
+  padding: 10px;
+}

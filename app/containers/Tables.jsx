@@ -11,7 +11,7 @@ class TablesContainer extends Component {
     super(props);
 
     this.state = {
-      data: [],
+      data: null,
       page: '1',
       perPage: '10',
       isToggleOn: false,
@@ -48,6 +48,8 @@ class TablesContainer extends Component {
   }
 
   render() {
+
+    if (!this.state.data) { return (<p>Loading Beers list...</p>); }
 
     const beer = this.state.data.map((el) => {
 
