@@ -95,7 +95,7 @@ class TablesContainer extends Component {
 
     return (
       <div>
-        <Panel header={'Foods'}>
+        <Panel header={'Beers list'}>
           <table className="table table-striped" fill>
             <thead>
               <tr>

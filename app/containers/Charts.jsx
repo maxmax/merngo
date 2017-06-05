@@ -53,7 +53,7 @@ class ChartsContainer extends Component {
 
     return (
       <div>
-        <Panel header={'Foods'}>
+        <Panel header={'Beers'}>
           <Row>
             <Col xs={12} md={6} lg={6}>
               <Chart title="A bar chart showing beers idu">

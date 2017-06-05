@@ -4,6 +4,7 @@ import Page from '../pages/Page';
 import AboutContainer from '../containers/About';
 
 class About extends Component {
+
   getMetaData() {
     return {
       title: this.pageTitle(),
@@ -27,6 +28,7 @@ class About extends Component {
   }
 
   render() {
+
     return (
       <Page {...this.getMetaData()}>
         <Grid fluid>
