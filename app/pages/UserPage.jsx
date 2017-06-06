@@ -33,7 +33,7 @@ class UserPage extends Component {
     return (
       <Layout {...this.getMetaData()}>
         <Grid fluid>
-          <UsersContainer {...this.props} data="data.json" />
+          <UsersContainer {...this.props} data="/api/data.json" />
         </Grid>
       </Layout>
     );

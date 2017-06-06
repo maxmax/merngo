@@ -9996,6 +9996,14 @@ exports.default = function (app) {
 
   app.use(_express2.default.static(_path2.default.join(process.cwd(), 'public')));
 
+  //api tests
+  app.get('/apitest', function (req, res) {
+    console.log('Api Test...');
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ a: 1 }, null, 3));
+  });
+  //end api test
+
   // I am adding this here so that the Heroku deploy will work
   // Indicates the app is behind a front-facing proxy,
   // and to use the X-Forwarded-* headers to determine the connection and the IP address of the client.
